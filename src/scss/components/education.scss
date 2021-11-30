@@ -1,0 +1,31 @@
+.education {
+	margin-bottom: 50px;
+
+
+	&__data-box {
+		display: flex;
+		flex-direction: column;
+		@media (max-width: 1140px) {
+			width:150px;
+			margin:0 auto;
+		}
+		align-items: center;
+
+	}
+
+
+	&__title {
+		text-align: center;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 140%;
+	}
+
+	&__icons {
+		img {
+			height: 29px;
+			min-width: 29px;
+			vertical-align: middle;
+		}
+	}
+}

@@ -1,0 +1,92 @@
+.summary {
+	position: relative;
+
+	@media (max-width:1140px) {
+		margin-bottom: 50px;
+	}
+
+	@media (max-width:1140px) {
+		svg {
+			width: 14px;
+			height: 14px;
+		}
+	}
+
+	@media (min-width:1140px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 200px;
+	}
+	&__about,{
+		max-width: 560px;
+	}
+
+
+	&__person {
+		font-weight: bold;
+		font-size: 28px;
+		line-height: 140%;
+	}
+
+	&__description {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 140%;
+		margin-bottom: 20px;
+
+	}
+
+	&__contacts {
+		line-height: 25px;
+		margin: auto;
+		p {
+			font-size: 14px;
+			line-height: 170%;
+		}
+	}
+
+
+	&__links {
+
+		display: flex;
+		margin:20px 0;
+
+		svg {
+			width: 25px;
+			height: 25px;
+
+		}
+
+		a {
+			padding-right: 30px;
+		}
+
+		a:last-child {
+			padding-right: 0;
+		}
+
+
+	}
+
+
+
+}
+
+
+.summary::before {
+	position: absolute;
+    display: block;
+    left: -14px;
+    width: 100vw;
+    height: 300px;
+    content: "";
+    bottom: -130px;
+    /* top: calc(100% * 4/23); */
+    background: url(../images/bg-line-top.png) no-repeat;
+    background-position: center right;
+    background-size: 100% 100%;
+}
+
+
+

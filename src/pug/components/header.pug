@@ -1,0 +1,22 @@
+.container
+	header.header
+
+			a.header__logo(href=data.header.links.logo)
+				picture.header__logo-image
+					source(srcset=`images/logo@2x.png`, media="(min-resolution: 144dpi)")
+					img(src=`images/logo.png`, alt=alt_text)
+
+			button.header__burger.btn.js-burger(type="button")
+				span
+				span
+				span
+
+			nav.header__menu
+				.header__list
+					each object, key in data.header.menu
+						a.header__link.js-to-anchor(
+							href=object.url
+							data-link=key
+						)
+							!= object.name
+				img(src="../images/clock.png", alt="")

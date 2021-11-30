@@ -1,0 +1,73 @@
+main.cv-page
+	.container
+		section.summary
+				.summary__about
+					h2.summary__person Имя кандидата,<br> Желаемая позиция
+					p.summary__description
+						|Как разработчик, я высоко ценю способность воплотить видение дизайнера в жизнь,
+						|что считаю очень полезным для бизнеса. Я получаю огромное удовлетворение, наблюдая за работой
+						|от идеи до дизайна, особенно когда она появляется в руках пользователя. Я считаю, что ориентированные на пользователя решения являются наиболее ценными цифровыми ресурсами будущего.
+				.summary__contacts
+					p mail@gmail.com
+					p +7 (999) 000-00-00
+					p г. Иннополис
+					.summary__links
+						a(href="#")
+							+svg("fb")
+						a(href="#")
+							+svg("vk")
+						a(href="#")
+							+svg("tg")
+		section.profile
+				.profile__experience
+					h2.section__title  Опыт работы
+					each job in data.jobs
+						.profile__data-box
+							p.profile__data-box-date= job.date
+							p.profile__data-box-position= job.position
+								span.profile__icons
+									each icon in job.profileIcons
+										img(src=icon)
+							span.profile__data-box-company
+								if job.companyLogo
+									each companyLogo in job.companyLogo
+										img(src=companyLogo)
+								h3= job.company
+								p.profile__data-box-location= job.location
+							p.profile__data-box-description= job.description
+							if job.links
+								each val, index  in job.links
+									a(href=val).profile__data-box-lnk= index
+
+				.profile__fedor
+					img(src="images/fedor.png")
+
+				.profile__education
+					h2.section__title Образование
+					each school in data.education
+						.profile__data-box.education__data-box
+							span.profile__icons.education__icons
+								if school.icons
+									each icon in school.icons
+										img(src=icon)
+							p.education__title= school.title
+							p.education__company= school.company
+
+		section.skills
+				h2.section__title Навыки
+				.profile__data-box.skills__data-box
+					.skills__title Adobe Creative Suite
+					.skills__description Photoshop, Illustrator, InDesign, XD, After Effects
+
+				.profile__data-box.skills__data-box
+					.skills__title Prototyping
+					.skills__description Sketch, Figma, InVision, Marvel, Principle, Balsamiq
+
+
+				.profile__data-box.skills__data-box
+					.skills__title Additional
+					.skills__description HTML, CSS, Google Analytics, Keynote, Miro
+
+				.profile__data-box.skills__data-box
+					.skills__title Languages
+					.skills__description Conversational English and Native Russian
