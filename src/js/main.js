@@ -18,7 +18,7 @@ scrollToAnchor.init();
 header.init();
 lazyLoading.init();
 backToTop.init();
-Preloader.init('/images/preloader.png')
+Preloader.init('images/preloader.png')
 	.then(() => {
 		document.querySelector('.preloader').style.display = 'none';
 	});
