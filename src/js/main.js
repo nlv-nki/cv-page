@@ -6,19 +6,22 @@ import {vhFix} from './vendor/vh-fix';
 import {actualYear} from './modules/actualYear';
 import header from './components/header';
 import lazyLoading from './modules/lazyLoading';
-import scrollToAnchor from './modules/scrollToAnchor';
 import backToTop from './modules/backToTop';
 import Preloader from 'ninelines-preloader';
 
 ieFix();
 vhFix();
 actualYear();
-scrollToAnchor.init();
 
 header.init();
 lazyLoading.init();
 backToTop.init();
 Preloader.init('images/preloader.png')
 	.then(() => {
-		document.querySelector('.preloader').style.display = 'none';
+		document.querySelector('.preloader img').classList.add('move-ne');
+	})
+	.then(() => {
+		setTimeout(() => {
+			document.querySelector('.preloader').style.display = 'none';
+		}, 3000);
 	});

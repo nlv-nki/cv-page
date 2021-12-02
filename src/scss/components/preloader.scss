@@ -1,10 +1,31 @@
 .preloader {
 	img {
 		position: absolute;
-		left: 0;
+		left: -1999px;
 		top: 0;
-		bottom: 0;
+		bottom: -1999px;
 		right: 0;
 		margin: auto;
+
+
+	//	position: absolute;
+		transition: all 2s ease-in-out;
+		-webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+		-moz-transition: all 2s ease-in-out; /** Firefox **/
+		-o-transition: all 2s ease-in-out; /** Opera **/
+
+
+
 	}
 }
+
+
+
+.preloader > img.move-ne {
+    transform: translate(1950px,-1950px);
+    // -webkit-transform: translate(350px,-350px);
+    // -o-transform: translate(350px,-350px);
+    // -moz-transform: translate(350px,-350px);
+}
+
+
