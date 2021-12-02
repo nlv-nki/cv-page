@@ -1,6 +1,7 @@
 main.cv-page
 	.container
 		section.summary
+		<a name="summary"></a>
 				.summary__about
 					h2.summary__person Имя кандидата,<br> Желаемая позиция
 					p.summary__description
@@ -19,6 +20,7 @@ main.cv-page
 						a(href="#")
 							+svg("tg")
 		section.profile
+				<a name="experience"></a>
 				.profile__experience
 					h2.section__title  Опыт работы
 					each job in data.jobs
@@ -54,6 +56,7 @@ main.cv-page
 							p.education__company= school.company
 
 		section.skills
+				<a name="skills"></a>
 				h2.section__title Навыки
 				.profile__data-box.skills__data-box
 					.skills__title Adobe Creative Suite
