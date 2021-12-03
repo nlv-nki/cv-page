@@ -1,4 +1,4 @@
-# Демонстрационный макет [«CV-PAGE»](https://nlv-nki.github.io/motoshop/public/)
+# Демонстрационный макет «CV-PAGE»
 
 ### Используемые технологии
 
