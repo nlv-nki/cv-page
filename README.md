@@ -1,5 +1,9 @@
-# Стартовый шаблон для верстки
+# Демонстрационный макет [«CV-PAGE»](https://nlv-nki.github.io/motoshop/public/)
 
-## Документация
+### Используемые технологии
 
-Документация к данной сборке доступна по ссылке [https://github.com/ninelines-team/ninelines-docs](https://github.com/ninelines-team/ninelines-docs).
+- HTML5
+- SCSS
+- адаптивная сетка
+- JavaScript
+- Gulp
